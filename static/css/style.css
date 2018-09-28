@@ -1,0 +1,687 @@
+*{
+/*    font-family: 'Montserrat', sans-serif;
+    font-family: 'Domine', serif;
+    font-family: 'Lora', serif;*/
+    transition: .5s;
+}
+body, html {
+    height: 100%;
+}
+::-moz-selection { /* Code for Firefox */
+    background: #CDB1A6;
+}
+
+::selection {
+    background: #CDB1A6;
+}
+/*homepage*/
+nav{
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    height: 80px;
+    z-index: 2;
+}
+nav:hover{
+    transition: background-color 200ms linear;
+    background-color:rgba(0,0,0,0.3);
+}
+nav.navbar-fixed-top.scrolled{
+    transition: background-color 200ms linear;
+    background-color:rgba(0,0,0,0.3);
+}
+.nav-row{
+    height: 100%;
+}
+.navbar-logo p a{
+    color: #AC846B;
+    z-index: 2;
+    font-family: times new roman !important;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar-content, .navbar-logo{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar-content ul{
+    float: right;
+    margin: auto;
+}
+.navbar-content ul li{
+    display: inline-block;
+}
+.navbar-content ul li a, .navbar-content ul li span{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 3;
+    cursor: pointer;
+}
+.navbar-content ul li a:hover,
+.navbar-content ul li a:active,
+.navbar-content ul li a:focus,
+.navbar-content ul li span:hover,
+.navbar-content ul li span:active,
+.navbar-content ul li span:focus{
+    color: #AC846B !important;
+}
+.navbar-content ul li a:after{
+    content: "\2022";
+    position: absolute;
+    top: 0;
+    color: #FFFFFF;
+    padding-left: 9px;
+}
+.banner{
+    height: 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner-main{
+    background-image: url('/project/static/img/header-main.jpg');
+}
+.banner-kape{
+    background-image: url('/project/static/img/header-kape.jpeg');
+}
+.banner-tsaa{
+    background-image: url('/project/static/img/header-tsaa.jpeg');   
+}
+.banner-menu{
+    background-image: url('/project/static/img/header-menu.jpeg');   
+}
+.banner-locations{
+    background-image: url('/project/static/img/header-locations.jpeg');      
+}
+.banner:after{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    z-index: 1;
+    position: absolute;
+    background-image: url('/project/static/img/overlay-pattern-style-one.png');
+}
+.banner-row{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.banner-content{
+    height: 100%;
+    width: 100%;   
+}
+.banner-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.banner-heading p{
+    font-weight: bold;
+    background-color: rgba(172, 132, 107, 0.7);
+    padding: 5px 10px;
+}
+footer{
+    height: 120px;
+    background-color: #333;
+}
+footer ul{
+    padding: 10px 0;
+    list-style: none;
+}
+footer ul li{
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #AC846B;
+    width: 40px;
+    height: 40px;
+}
+footer ul li:hover{
+    border: none;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #AC846B;
+}
+footer ul li a:hover{
+    color: #AC846B;
+}
+footer .footer-others a{
+    text-decoration: none;
+    color: #AC846B;   
+}
+footer .footer-others a:hover{
+    color: #AC846B;
+}
+.last-row{
+    padding-bottom: 10px;
+}
+.featured-p, .blog-p{
+    padding: 10px 0;
+}
+.featured-p-heading, .blog-p-heading{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #292b2c;
+    text-transform: uppercase;
+}
+.featured-pic-1{
+    height: 400px;
+    background-image: url(/project/static/img/featured/breakfast.jpg);
+    background-size: cover;
+    background-position: -100px center;
+    background-repeat: no-repeat;
+}
+.featured-pic-2{
+    height: 400px;
+    background-image: url(/project/static/img/featured/tea.jpeg);
+    background-size: cover;
+    background-position: -100px center;
+    background-repeat: no-repeat;
+}
+.featured-pic-3{
+    height: 400px;
+    background-image: url(/project/static/img/featured/brewiced.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.featured-pic-1 a, .featured-pic-2 a, .featured-pic-3 a{
+    width: 200px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 340px;
+    font-family: 'Montserrat', sans-serif;
+}
+.blog-1, .blog-2{
+    text-decoration: none;
+    color: #292b2c;
+}
+.blog-1:hover, .blog-2:hover{
+    color: #292b2c;
+}
+.blog-hover-1, .blog-hover-2{
+    position: absolute;
+    background: rgba(32, 30, 31,.8);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    display: none;
+}
+.blog-hover-1 a, .blog-hover-2 a{
+    margin-top: 80px;
+}
+.blog-pic-1{
+    height: 200px;
+    background-image: url(/project/static/img/blog/nitro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.blog-pic-2{
+    height: 200px;
+    background-image: url(/project/static/img/blog/tea.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.blog-heading{
+    font-family: 'Montserrat', sans-serif;   
+}
+.blog-title-1, .blog-title-2{
+    word-wrap: break-word;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner-text{
+    font-size: 20px;
+    font-weight: 400 !important;
+    background-color: transparent !important;
+}
+/*kape*/
+.brewed-pic-1{
+    height: 400px;
+    background-image: url(/project/static/img/kape/brewed-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.brewed-pic-2{
+    height: 400px;
+    background-image: url(/project/static/img/kape/brewed-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.brewed-pic-1 p, .brewed-pic-2 p{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 340px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CDB1A6;
+}
+.card-outline-primary{
+    border: 2px solid #AC846B;
+    margin: 15px;
+}
+.card-text{
+    padding: 0 25px;
+}
+.espresso-pic-1{
+    height: 200px;
+    background-image: url(/project/static/img/kape/espresso.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.espresso-pic-2{
+    height: 200px;
+    background-image: url(/project/static/img/kape/americano.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.espresso-pic-3{
+    height: 200px;
+    background-image: url(/project/static/img/kape/cappuccino.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.espresso-pic-4{
+    height: 200px;
+    background-image: url(/project/static/img/kape/macchiato.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.map{
+    height: 400px;
+    background-image: url(/project/static/img/kape/map.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.map-text{
+    padding: 0 25px;
+    text-align: justify;
+    font-weight: bold;
+}
+.quality{
+    min-height: 350px;
+    background-image: url(/project/static/img/kape/quality.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.quality-text{
+    text-align: justify;
+    font-weight: bold;
+}
+.growing-text, .harvesting-text, .processing-text, .cupping-text, .roasting-text, .blending-flavoring-text{
+    text-align: justify;
+}
+.growing-pic{
+    height: 400px;
+    background-image: url(/project/static/img/kape/growing.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.harvesting-pic{
+    height: 400px;
+    background-image: url(/project/static/img/kape/harvesting.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.processing-pic{
+    height: 400px;
+    background-image: url(/project/static/img/kape/processing.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;      
+}
+.cupping-pic{
+    height: 400px;
+    background-image: url(/project/static/img/kape/cupping.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;      
+}
+.roasting-pic{
+    height: 400px;
+    background-image: url(/project/static/img/kape/roasting.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;      
+}
+.blending-flavoring-pic{
+    height: 400px;
+    background-image: url(/project/static/img/kape/blending-flavoring.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;         
+}
+/*tea*/
+.tea{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tea-pic-1{
+    background-image: url(/project/static/img/tsaa/hot-tea.jpeg);
+}
+.tea-pic-2{
+    background-image: url(/project/static/img/tsaa/iced-tea.jpeg);
+}
+.tea-pic-3{
+    background-image: url(/project/static/img/tsaa/tea-latte.jpeg);
+}
+.tea-pic-4{
+    background-image: url(/project/static/img/tsaa/iced-tea-latte.jpeg);
+}
+.map-tea{
+    height: 400px;
+    background-image: url(/project/static/img/tsaa/map.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.quality-tea{
+    min-height: 100%;
+    background-image: url(/project/static/img/tsaa/quality.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+}
+.quality-text-heading{
+    color: #ffffff;
+}
+.quality-text-tea{
+    /*background-color:  rgba(160, 70, 0,.3);*/
+    background-color: rgba(0, 0, 0,.3);
+    padding: 10px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.tea-cupping-pic{
+    height: 400px;
+    background-image: url(/project/static/img/tsaa/tea-cupping.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fun-facts-tea{
+    min-height: 300px;
+    background-image: url(/project/static/img/tsaa/fun-fact-1.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+}
+.fun-facts-text-heading{
+    color: #ffffff;
+}
+.fun-facts-text-tea{
+    background-color: rgba(0, 0, 0,.3);
+    padding: 10px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.caring-cup-pic{
+    height: 400px;
+    background-image: url(/project/static/img/tsaa/caring-cup.jpeg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/*menu*/
+.content-drinks{
+    height: 100%;
+}
+.menu-pic-1{
+    height: 400px;
+    background-image: url(/project/static/img/menu/kape.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+.menu-pic-2{
+    height: 400px;
+    background-image: url(/project/static/img/menu/tsaa.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+#btn_menu_kape, #btn_menu_tsaa{
+    text-decoration: none;
+    color: #AC846B;
+}
+#btn_menu_kape:hover, #btn_menu_tsaa:hover{
+    cursor: pointer;
+}
+.menu-kape-display, .menu-tsaa-display{
+    padding-bottom: 60px;
+    background-color: rgb(30, 30, 30);
+    min-height: 100%;
+    display: none;
+    color: #AC846B;
+} 
+.menu-kape-display ul, .menu-tsaa-display ul{
+    list-style: none;
+    padding-top: 25px;
+    padding-left: 0;
+}
+.menu-kape-display ul li, .menu-tsaa-display ul li{
+    margin: 10px;
+}
+.menu-kape-display ul li span, .menu-tsaa-display ul li span{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #AC846B;
+    cursor: pointer;
+}
+.menu-kape-display ul li span:hover,
+.menu-kape-display ul li span:active,
+.menu-kape-display ul li span:focus,
+.menu-tsaa-display ul li span:hover,
+.menu-tsaa-display ul li span:active,
+.menu-tsaa-display ul li span:focus{
+    background-color: #AC846B;
+    color: #333;
+}
+.row-top{
+    padding-top: 90px;
+}
+#espresso, #brewed, #hotchoco, #blended, #handcrafted, #fullLeaf{
+    display: none;
+}
+.menu-espresso-pic-1, .menu-espresso-pic-2, .menu-espresso-pic-3, .menu-espresso-pic-4,
+.menu-espresso-pic-5, .menu-espresso-pic-6, .menu-espresso-pic-7, .menu-espresso-pic-8,
+.menu-espresso-pic-9, .menu-espresso-pic-10, .menu-espresso-pic-11, .menu-espresso-pic-12,
+.menu-espresso-pic-13, .menu-espresso-pic-14, .menu-espresso-pic-15, .menu-brewed-pic-1,
+.menu-brewed-pic-2, .menu-hotchoco-pic-1, .menu-hotchoco-pic-2, .menu-hotchoco-pic-3,
+.menu-blended-pic-1, .menu-blended-pic-2, .menu-blended-pic-3, .menu-blended-pic-4,
+.menu-blended-pic-5, .menu-blended-pic-6, .menu-blended-pic-7, .menu-blended-pic-8,
+.menu-handcrafted-pic-1, .menu-handcrafted-pic-2, .menu-handcrafted-pic-3, .menu-fullLeaf-pic-1,
+.menu-fullLeaf-pic-2, .menu-fullLeaf-pic-3, .menu-fullLeaf-pic-4{
+    height: 150px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu-espresso-pic-1{
+    background-image: url(/project/static/img/menu/espresso-pic-1.jpg);
+}
+.menu-espresso-pic-2{
+    background-image: url(/project/static/img/menu/espresso-pic-2.jpg);
+}
+.menu-espresso-pic-3{
+    background-image: url(/project/static/img/menu/espresso-pic-3.jpg);   
+}
+.menu-espresso-pic-4{
+    background-image: url(/project/static/img/menu/espresso-pic-4.jpg);   
+}
+.menu-espresso-pic-5{
+    background-image: url(/project/static/img/menu/espresso-pic-5.jpg);   
+}
+.menu-espresso-pic-6{
+    background-image: url(/project/static/img/menu/espresso-pic-6.jpg);   
+}
+.menu-espresso-pic-7{
+    background-image: url(/project/static/img/menu/espresso-pic-7.jpg);   
+}
+.menu-espresso-pic-8{
+    background-image: url(/project/static/img/menu/espresso-pic-8.jpg);   
+}
+.menu-espresso-pic-9{
+    background-image: url(/project/static/img/menu/espresso-pic-9.jpg);   
+}
+.menu-espresso-pic-10{
+    background-image: url(/project/static/img/menu/espresso-pic-10.jpg);   
+}
+.menu-espresso-pic-11{
+    background-image: url(/project/static/img/menu/espresso-pic-11.jpg);   
+}
+.menu-espresso-pic-12{
+    background-image: url(/project/static/img/menu/espresso-pic-12.jpg);   
+}
+.menu-espresso-pic-13{
+    background-image: url(/project/static/img/menu/espresso-pic-13.jpg);   
+}
+.menu-espresso-pic-14{
+    background-image: url(/project/static/img/menu/espresso-pic-14.jpg);   
+}
+.menu-espresso-pic-15{
+    background-image: url(/project/static/img/menu/espresso-pic-15.jpg);
+}
+.menu-brewed-pic-1{
+    background-image: url(/project/static/img/menu/brewed-pic-1.jpg);
+}
+.menu-brewed-pic-2{
+    background-image: url(/project/static/img/menu/brewed-pic-2.jpg);
+}
+.menu-hotchoco-pic-1{
+    background-image: url(/project/static/img/menu/hotchoco-pic-1.jpg);
+}
+.menu-hotchoco-pic-2{
+    background-image: url(/project/static/img/menu/hotchoco-pic-2.jpg);
+}
+.menu-hotchoco-pic-3{
+    background-image: url(/project/static/img/menu/hotchoco-pic-3.jpg);
+}
+.menu-blended-pic-1{
+    background-image: url(/project/static/img/menu/blended-pic-1.jpg);
+}
+.menu-blended-pic-2{
+    background-image: url(/project/static/img/menu/blended-pic-2.jpg);
+}
+.menu-blended-pic-3{
+    background-image: url(/project/static/img/menu/blended-pic-3.jpg);
+}
+.menu-blended-pic-4{
+    background-image: url(/project/static/img/menu/blended-pic-4.jpg);
+}
+.menu-blended-pic-5{
+    background-image: url(/project/static/img/menu/blended-pic-5.jpg);
+}
+.menu-blended-pic-6{
+    background-image: url(/project/static/img/menu/blended-pic-6.jpg);
+}
+.menu-blended-pic-7{
+    background-image: url(/project/static/img/menu/blended-pic-7.jpg);
+}
+.menu-blended-pic-8{
+    background-image: url(/project/static/img/menu/blended-pic-8.jpg);
+}
+.menu-handcrafted-pic-1{
+    background-image: url(/project/static/img/menu/handcrafted-pic-1.jpg);
+}
+.menu-handcrafted-pic-2{
+    background-image: url(/project/static/img/menu/handcrafted-pic-2.jpg);
+}
+.menu-handcrafted-pic-3{
+    background-image: url(/project/static/img/menu/handcrafted-pic-3.jpg);
+}
+.menu-fullLeaf-pic-1{
+    background-image: url(/project/static/img/menu/fullLeaf-pic-1.jpg);
+}
+.menu-fullLeaf-pic-2{
+    background-image: url(/project/static/img/menu/fullLeaf-pic-2.jpg);
+}
+.menu-fullLeaf-pic-3{
+    background-image: url(/project/static/img/menu/fullLeaf-pic-3.jpg);
+}
+.menu-fullLeaf-pic-4{
+    background-image: url(/project/static/img/menu/fullLeaf-pic-4.jpg);
+}
+.row-display-top{
+    height: 60px;
+    padding-top: 30px;
+}
+.row-display-top span{
+    font-size: 20px;
+    text-decoration: none;
+    color: #AC846B;
+    cursor: pointer;
+}
+.row-display-top span i{
+    float: right;
+}
+/*location*/
+.content-location{
+    height: 100%;
+}
+.p-location{
+    color: #AC846B;
+    list-style: square;
+}
+.p-location i:hover{
+    font-size: 20px;
+}
+/*login*/
+.modal{
+    padding: 0 !important;
+}
+.modal-header{
+    border-bottom: 1px solid #006431;
+}
+.modal-footer{
+    border-top: 1px solid #006431;
+}
+.modal-content{
+    background: url(/project/static/img/login-bg.png);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.modal-title {
+    font-weight: bold;
+}
+/*home*/
+.home{
+    height: 100%;
+    background-color: #333;
+}
+.home-text, .home ul li{
+    color: #ffffff;
+    list-style: none;
+}
